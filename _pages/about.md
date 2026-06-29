@@ -7,11 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD candidate in Computer Science at **Leiden University (LIACS)**, specializing in **Explainable AI (XAI)** for malware detection and analysis. My research evaluates the explanations produced by malware detection models to improve model reliability and support security analysts' trust — spanning both local and global explainability, and both supervised and clustering-based detectors.
-
-I also investigate how **Large Language Models (LLMs)** can connect low-level features with high-level malicious behaviours, including semantic alignment between malware features and **MITRE ATT&CK** techniques. Alongside this, I have experience building large-scale data processing and machine learning (including LLM) pipelines.
-
-I am advised by [Olga Gadyatskaya](mailto:o.gadyatskaya@liacs.leidenuniv.nl).
+Currently, I am a PhD candidate in Computer Science at Leiden University, supervised by Olga Gadyatskaya, specializing in explainable AI for malware detection and analysis. My research focuses on evaluating explanations produced by malware detection models to improve model reliability and support security analysts’ trust. This work covers both local and global explainability, as well as supervised and clustering-based detection methods. As an extension of this work, I investigate how Large Language Models (LLMs) can make malware explanations more semantically meaningful by bridging low-level malware features with high-level malicious behaviors, including their alignment with MITRE ATT\&CK techniques. Through these projects, I have also developed experience with large-scale data processing and machine learning pipelines, including LLM-based workflows.
 
 Research interests
 ======
