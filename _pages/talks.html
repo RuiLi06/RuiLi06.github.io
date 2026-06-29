@@ -7,12 +7,12 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.talks reversed %}
+{% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+{% for post in sorted_talks %}
   <div class="list__item">
     <article class="archive__item">
-      <h2 class="archive__item-title">{{ post.title }}</h2>
-      <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}{% if post.location %}, {{ post.location }}{% endif %}</p>
-      {{ post.content }}
+      <p><strong>{{ post.venue }}</strong>, {{ post.location }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}<br />
+      <i>{{ post.title }}</i></p>
     </article>
   </div>
 {% endfor %}
