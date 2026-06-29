@@ -15,10 +15,6 @@ author_profile: true
 {% for post in sorted_pubs %}
   <div class="list__item">
     <article class="archive__item">
-      <h3 class="archive__item-title">
-        {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}
-      </h3>
-      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
       {% if post.citation %}<p>{{ post.citation }}</p>{% endif %}
     </article>
   </div>
