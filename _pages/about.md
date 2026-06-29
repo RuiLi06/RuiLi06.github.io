@@ -9,8 +9,6 @@ redirect_from:
 
 Currently, I am a PhD candidate in Computer Science at Leiden University, supervised by Olga Gadyatskaya, working on Explainable AI (XAI), trustworthy machine learning, Large Language Models (LLMs), and AI-driven security. My research investigates how AI-based security systems can be made more transparent, reliable, and actionable for human analysts.
 
-[Download CV as PDF](/files/Rui_Li_CV.pdf){: .btn .btn--primary}
-
 Research interests
 ======
 - **Explainable AI (XAI)**
