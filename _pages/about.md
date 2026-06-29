@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Currently, I am a PhD candidate in Computer Science at Leiden University, working on Explainable AI (XAI), trustworthy machine learning, Large Language Models (LLMs), and AI-driven security. My research investigates how AI-based security systems can be made more transparent, reliable, and actionable for human analysts.
+Currently, I am a PhD candidate in Computer Science at Leiden University, supervised by Olga Gadyatskaya, working on Explainable AI (XAI), trustworthy machine learning, Large Language Models (LLMs), and AI-driven security. My research investigates how AI-based security systems can be made more transparent, reliable, and actionable for human analysts.
 
 Research interests
 ======
