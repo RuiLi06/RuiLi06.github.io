@@ -11,19 +11,15 @@ author_profile: true
 
 {% include base_path %}
 
-{% for category in site.publication_category %}
-  {% assign title_shown = false %}
-  {% for post in site.publications reversed %}
-    {% if post.category != category[0] %}{% continue %}{% endif %}
-    {% unless title_shown %}<h2>{{ category[1].title }}</h2><hr />{% assign title_shown = true %}{% endunless %}
-    <div class="list__item">
-      <article class="archive__item">
-        <h3 class="archive__item-title">
-          {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}
-        </h3>
-        <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-        {% if post.citation %}<p>{{ post.citation }}</p>{% endif %}
-      </article>
-    </div>
-  {% endfor %}
+{% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+{% for post in sorted_pubs %}
+  <div class="list__item">
+    <article class="archive__item">
+      <h3 class="archive__item-title">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}
+      </h3>
+      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+      {% if post.citation %}<p>{{ post.citation }}</p>{% endif %}
+    </article>
+  </div>
 {% endfor %}
