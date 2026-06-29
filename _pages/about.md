@@ -11,7 +11,7 @@ Currently, I am a PhD candidate in Computer Science at Leiden University, superv
 
 Research interests
 ======
-- **Explainable AI(XAI)**
+- **Explainable AI (XAI)**
 - **LLMs for security** 
 - **Malware detection & analysis** 
 

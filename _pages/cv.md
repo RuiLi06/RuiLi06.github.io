@@ -13,10 +13,11 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Computer Science, Leiden University, 2021–2026 (expected)
+* Ph.D. in Computer Science, Leiden Institute of Advanced Computer Science (LIACS), Leiden University, 2021–2026 (expected)
   * Research focus: Explainable AI in Malware Detection
   * Supervisor: Olga Gadyatskaya
 * M.Sc. in Electronic Engineering, Beijing Institute of Technology, 2017–2020
+  * Thesis: Explainable Android Malware Detection Methods
 * B.Sc. in Electronic Engineering & Economics (Dual Degree), Beijing Institute of Technology, 2013–2017
 
 Research experience
@@ -46,29 +47,30 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<ul>{% assign cv_pubs = site.publications | sort: 'date' | reverse %}{% for post in cv_pubs %}
+  <li>{{ post.citation }}</li>
+{% endfor %}</ul>
 
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+<ul>{% assign cv_talks = site.talks | sort: 'date' | reverse %}{% for post in cv_talks %}
+  <li><strong>{{ post.venue }}</strong>, {{ post.location }}, {{ post.date | default: "1900-01-01" | date: "%Y" }} — <i>{{ post.title }}</i></li>
+{% endfor %}</ul>
 
 Teaching & supervision
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<ul>{% assign cv_teach = site.teaching | sort: 'date' | reverse %}{% for post in cv_teach %}
+  <li>{{ post.years }} — <strong>{{ post.title }}</strong> ({{ post.type }}): {{ post.thesis }}</li>
+{% endfor %}</ul>
 
 Awards
 ======
-* Chinese Scholarship Council, 2021–2025
+* China Scholarship Council, May 2021
 * Winning Prize, Global (Nanjing) AI Application Competition, 2018
+* Outstanding Graduates, Beijing Institute of Technology, 2017
 * Silver Award, iGEM (International Genetically Engineered Machine), 2016
 * Meritorious Winner, Mathematical Contest in Modeling, 2016
-* Outstanding Graduates, Beijing Institute of Technology, 2017
+* University Scholarship (7 times), 2013–2020
 
 Service
 ======
